@@ -1,6 +1,6 @@
-# Install Docker on Ubuntu
+# Install Docker on Centos
 
-We will install Docker on Ubuntu 16.04
+We will install Docker on Centos
 
 ## Step 1: Install some prereqs and remove old versions
 
@@ -55,7 +55,7 @@ The output should be as follows:
 ## Step 5: Make a user group for Docker
 
 We don't want to have to run docker as root every time using sudo. So let's create new group called docker,
-and we will add user ubuntu to that group.
+and we will add user ec2-user to that group.
 
 ```bash
 sudo groupadd docker
