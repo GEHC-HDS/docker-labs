@@ -17,6 +17,16 @@ docker run  -v /docker/redis-data:/data \
   redis-server --appendonly yes
 ```
 
+
+Create a file called `data` with the following content:
+
+```text
+SET counter 42
+INFO server
+SAVE
+QUIT
+```
+
 We can pipe data into the Redis instance using the following command.
 
 
@@ -24,10 +34,16 @@ We can pipe data into the Redis instance using the following command.
 cat data | docker exec -i r1 redis-cli --pipe
 ```
 
+You can verify this:
+
+```bash
+docker exec -i r1 redis-cli GET counter
+```
+
 Redis will save this data to disk. On the host we can investigate the mapped direct which should contain the Redis data file.
 
 ```bash
-ls /docker/redis-data
+ls -lah /docker/redis-data
 ```
 
 
