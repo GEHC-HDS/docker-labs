@@ -32,7 +32,7 @@ With the container in place, we can now copy files from our local client directo
 To copy files into a container you use the command `docker cp`. The following command will copy the `config.conf` file into our dataContainer and the directory config.
 
 ```bash
-docker cp config.conf datacontainer:/config/
+docker cp config.conf dataContainer:/config/
 ```
 
 ## Step 3 -- Mount Volumes
