@@ -1,5 +1,6 @@
-# Install Docker on Mac
+<link rel='stylesheet' href='../assets/css/main.css'/>
 
+# Install Docker on Mac
 
 There are couple of options to install Docker on Mac
 

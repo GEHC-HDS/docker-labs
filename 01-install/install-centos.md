@@ -1,3 +1,5 @@
+<link rel='stylesheet' href='../assets/css/main.css'/
+
 # Install Docker on Centos
 
 We will install Docker on Centos

@@ -1,3 +1,5 @@
+<link rel='stylesheet' href='../assets/css/main.css'/>
+
 # Install Docker on Ubuntu
 
 We will install Docker on Ubuntu 18.04 +
