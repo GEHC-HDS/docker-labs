@@ -1,6 +1,6 @@
 # Install Docker on Ubuntu
 
-We will install Docker on Ubuntu 16.04
+We will install Docker on Ubuntu 18.04 +
 
 ## Step 1: Install some prereqs and remove old versions
 
@@ -8,27 +8,28 @@ We will install a few prereqs here.  Also we will remove older versions of docke
 "docker-engine", and "docker.io"
 
 ```bash
-sudo apt-get install curl
-sudo apt-get remove docker docker-engine docker.io
+$   sudo apt-get install curl
+$   sudo apt-get remove docker docker-engine docker.io
 ```
 
 ## Step 2: Get the GPG key and add the repository
 
 ```bash
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+$   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+$   sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 ```
 
 Now let's do an update
 
 ```bash
-sudo apt-get update
+$   sudo apt-get update
 ```
 
 ## Step 3: Install Docker
 
 ```bash
-sudo apt-get install -y docker-ce
+$   sudo apt-get install -y docker-ce
 ```
 
 This should install docker.  
@@ -36,7 +37,7 @@ This should install docker.
 ## Step 4: Verify Docker is running
 
 ```bash
-sudo systemctl status docker
+$   sudo systemctl status docker
 ```
 
 The output should be as follows:
@@ -58,8 +59,8 @@ We don't want to have to run docker as root every time using sudo. So let's crea
 and we will add user ubuntu to that group.
 
 ```bash
-sudo groupadd docker
-sudo usermod -aG docker $USER
+$   sudo groupadd docker
+$   sudo usermod -aG docker $USER
 ```
 
 Go ahead and log out and log back in again.
@@ -69,7 +70,7 @@ Go ahead and log out and log back in again.
 Run the following hello world container
 
 ```bash
-docker run hello-world
+$   docker run hello-world
 ```
 
 ```console

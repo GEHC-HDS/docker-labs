@@ -1,6 +1,20 @@
 # Install Docker on Mac
 
 
+There are couple of options to install Docker on Mac
+
+1. Using Mac desktop (recommended)
+2. Brew
+
+---
+
+## Option 1 - Mac Docker Desktop (Preferred)
+
+Follow [instructions here](https://docs.docker.com/desktop/mac/install/)
+
+---
+
+## Option 2 - Using Brew
 
 ## Step 1: Install Homebrew
 
