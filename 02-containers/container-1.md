@@ -1,6 +1,6 @@
 <link rel='stylesheet' href='../assets/css/main.css'/>
 
-# Lab 2.1: Running Containers
+# Lab : Container 1
 
 ## Overview
 

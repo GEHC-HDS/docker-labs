@@ -1,6 +1,6 @@
 <link rel='stylesheet' href='../assets/css/main.css'/>
 
-# Lab 2.2 Container Deletion
+# Lab : Container 2
 
 We are going to see how we can manipulate our containers.
 
@@ -54,7 +54,35 @@ Because the containers are isolated and the changes we make within containers ar
 
 Go ahead and exit by hitting CNTRL-D or typing exit.
 
-## Step 3: Deleting Containers
+## Step-3: Exec
+
+Start a container
+
+```bash
+$    docker container run -it alpine
+
+## now you will be in the continer:
+## crate a file
+    >  touch a.txt
+```
+
+**Keep this continer running, do not exit!**
+
+**ACTION: Open another terminal, and execute this command**
+
+```bash
+$   docker ps
+# note the container id of you the running alpine container
+# say 'aaabbbccc'
+
+## Execute a command in that container
+## Substitute CONTAINER_ID with the actual container id
+$   docker exec CONTAINER_ID   ls
+```
+
+You should see the file `a.txt`
+
+## Step 4: Deleting Containers
 
 Now, see if you can see your command:
 
@@ -86,7 +114,7 @@ It shouldn't be there anymore.
 What if you want to run the docker container and just have it auto-delete after you are done.
 
 
-## Step-4: Deleting Images
+## Step-5: Deleting Images
 
 Let's delete the alpine image locally.  We can always pull it from DockerHub.
 

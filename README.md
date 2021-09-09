@@ -15,8 +15,9 @@ Welcome to docker labs
 
 ### 2. Containers
 
-* [Run](./02-containers/2.1-run.md)
-* [Deletion](./02-containers/2.2-deletion.md)
+* [container-1](./02-containers/container-1.md)
+* [container-2](./02-containers/container-2.md)
+* [container-3](./02-containers/container-3.md)
 
 ### 3. [Ports](./03-ports/)
    * [Ports](./03-ports/3.1-ports.md)
