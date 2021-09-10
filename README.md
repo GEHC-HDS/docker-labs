@@ -15,9 +15,10 @@ Welcome to docker labs
 
 ### 2. Containers
 
-* [container-1](./02-containers/container-1.md)
-* [container-2](./02-containers/container-2.md)
-* [container-3](./02-containers/container-3.md)
+* [container-1](./02-containers/container-1.md) - Get started with containers
+* [container-2](./02-containers/container-2.md) - exec, attach and delete containers
+* [container-3](./02-containers/container-3.md) - background continers, pause and resume
+* [container-4](./02-containers/container-4-custom.md) - create custom snapshots
 
 ### 3. [Ports](./03-ports/)
    * [Ports](./03-ports/3.1-ports.md)
