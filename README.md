@@ -23,7 +23,7 @@ Welcome to docker labs
 ### 4. Dockerfile
 
 * 4.1 - [First dockerfile build](dockerfile/1-simple-build/README.md)
-* [Dockerfile](./dockerfile/1-dockerfile.md)
+* 4.2 - [Building a flask application](./dockerfile/2-flask-app/README.md)
 
 ### 3. Networking
 
