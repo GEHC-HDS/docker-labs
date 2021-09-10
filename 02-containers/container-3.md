@@ -46,3 +46,38 @@ $   docker  logs  -f   CONTAINER_ID
 ```bash
 $   docker container attach CONTAINER_ID
 ```
+## Step-5: Pausing and Resuming
+
+On terminal 1:
+
+```bash
+$  docker run  alpine /bin/sh -c "while true; do sleep 1; date; done"
+# leave it running
+```
+
+On terminal 2:
+
+```bash
+$   docker ps
+# note the container id of running container
+
+$   docker pause CONTAINER_ID
+```
+
+Observe how the output from terminal-1 is now paused.
+
+Unpause the container
+
+```bash
+$   docker   unpause CONTAINER_ID
+```
+
+Now observe how the output from terminal-1 is resumed.
+
+Let's stop the container.
+
+ON terminal-2
+
+```bash
+$   docker stop CONTAINER_ID
+```
