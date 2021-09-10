@@ -23,7 +23,12 @@ Welcome to docker labs
 ### 4. Dockerfile
 
 * 4.1 - [First dockerfile build](dockerfile/1-simple-build/README.md)
-* 4.2 - [Building a flask application](./dockerfile/2-flask-app/README.md)
+* 4.2 - [Bundling a flask application](./dockerfile/2-flask-app/README.md)
+
+### 5 - Registries
+
+* 5.1 - [Running a local registry](registries/1-local-registry.md)
+* 5.2 - [Working with Dockerhub](registries/2-dockerhub.md)
 
 ### 3. Networking
 

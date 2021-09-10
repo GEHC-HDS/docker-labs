@@ -1,5 +1,6 @@
-Lab 4.1: Dockerfile
-==================
+<link rel='stylesheet' href='../../assets/css/main.css'/>
+
+# Lab: Bundling a Flask Web Application
 
 In this app, we will create a Python app using flask, and deploy it using docker.
 
