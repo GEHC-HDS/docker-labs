@@ -32,4 +32,4 @@ Welcome to docker labs
 
 ### 3. Networking
 
-* [Ports](./networking/net-1-ports.md)
+* [Ports](./networking/1-ports.md)
