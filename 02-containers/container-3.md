@@ -46,6 +46,7 @@ $   docker  logs  -f   CONTAINER_ID
 ```bash
 $   docker container attach CONTAINER_ID
 ```
+
 ## Step-5: Pausing and Resuming
 
 On terminal 1:

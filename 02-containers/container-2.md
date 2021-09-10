@@ -113,8 +113,19 @@ It shouldn't be there anymore.
 
 What if you want to run the docker container and just have it auto-delete after you are done.
 
+## Step-5: Deleting all stopped containers
 
-## Step-5: Deleting Images
+```bash
+# get all container ids
+$   docker ps -aq
+
+$   docker rm $(docker ps -aq)
+
+## force
+$   docker rm -f $(docker ps -aq)
+```
+
+## Step-6: Deleting Images
 
 Let's delete the alpine image locally.  We can always pull it from DockerHub.
 
