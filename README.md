@@ -37,3 +37,5 @@ Welcome to docker labs
 ## 7. Volumes
 
 * 7.1 - [Using the volumes](volumes/1-volumes.md)
+* 7.2 - [Using the shared directories](volumes/2-shared-directories.md)
+* 7.3 - [Use case - nginx](volumes/3-nginx-use-case.md)
