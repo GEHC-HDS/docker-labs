@@ -75,6 +75,8 @@ Now when you access the file, you will see your changes:
 $   curl   localhost:8000/
 ```
 
+Notice the changes are reflected live, no need to restart the container
+
 ## Step-4: Stop the container
 
 ```bash

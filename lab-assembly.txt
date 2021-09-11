@@ -6,3 +6,4 @@ containers
 networking
 dockerfile
 database
+volumes
