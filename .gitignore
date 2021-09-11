@@ -1,4 +1,4 @@
 *.out
 *.zip
 
-volumes/data*
+storage/data*

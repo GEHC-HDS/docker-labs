@@ -34,8 +34,8 @@ Welcome to docker labs
 
 * 6.1 - [Ports](./networking/1-ports.md)
 
-## 7. Volumes
+## 7. Storage
 
-* 7.1 - [Using the volumes](volumes/1-volumes.md)
-* 7.2 - [Using the shared directories](volumes/2-shared-directories.md)
-* 7.3 - [Use case - nginx](volumes/3-nginx-use-case.md)
+* 7.1 - [Using the volumes](storage/1-volumes.md)
+* 7.2 - [Using the shared directories](storage/2-shared-directories.md)
+* 7.3 - [Use case - nginx](storage/3-nginx-use-case.md)
