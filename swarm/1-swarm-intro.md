@@ -302,5 +302,6 @@ $   docker service rm nginx
 
 ## References
 
+- https://docs.docker.com/engine/swarm/swarm-tutorial/
 - https://upcloud.com/community/tutorials/docker-swarm-orchestration/
-- 
+
