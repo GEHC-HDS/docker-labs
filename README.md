@@ -18,7 +18,10 @@ Welcome to docker labs
 * 2.1 - [container-1](./containers/container-1.md) - Get started with containers
 * 2.2 - [container-2](./containers/container-2.md) - exec, attach and delete containers
 * 2.3 - [container-3](./containers/container-3.md) - background continers, pause and resume
-* 2.4 - [container-4](./containers/container-4-custom.md) - create custom snapshots
+
+## 3. Images
+
+* 3.1 [Creating custom images](images/1-custom-image.md)
 
 ## 4. Dockerfile
 
@@ -45,6 +48,6 @@ Welcome to docker labs
 * 8.1 - [docker compose 1](docker-compose/nginx/README.md) - nginx
 * 8.2 - [docker compose 2](docker-compose/wordpress/README.md) - wordpress
 
-## Swarm
+## 9. Swarm
 
 * 9.1 - [docker swarm intro](swarm/1-swarm-intro.md)

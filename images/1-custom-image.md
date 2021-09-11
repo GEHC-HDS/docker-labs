@@ -1,6 +1,14 @@
-<link rel='stylesheet' href='../assets/css/main.css'/
+<link rel='stylesheet' href='../assets/css/main.css'/>
 
-# Creating a Custom Container
+# Creating a Custom Image
+
+## Overview
+
+We will create a custom image manually
+
+## Duration
+
+10 mins
 
 ## Step-1: Run a basic ubuntu image
 

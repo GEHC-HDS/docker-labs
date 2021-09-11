@@ -3,6 +3,7 @@ containers
 database
 docker-compose
 dockerfile
+images
 install
 networking
 registries
