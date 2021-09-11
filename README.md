@@ -39,3 +39,8 @@ Welcome to docker labs
 * 7.1 - [Using the volumes](storage/1-volumes.md)
 * 7.2 - [Using the shared directories](storage/2-shared-directories.md)
 * 7.3 - [Use case - nginx](storage/3-nginx-use-case.md)
+
+## 8. Docker compose
+
+* 8.1 - [docker compose 1](docker-compose/nginx/README.md) - nginx
+* 8.2 - [docker compose 2](docker-compose/wordpress/README.md) - wordpress
