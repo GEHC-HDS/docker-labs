@@ -44,3 +44,7 @@ Welcome to docker labs
 
 * 8.1 - [docker compose 1](docker-compose/nginx/README.md) - nginx
 * 8.2 - [docker compose 2](docker-compose/wordpress/README.md) - wordpress
+
+## Swarm
+
+* 9.1 - [docker swarm intro](swarm/1-swarm-intro.md)
