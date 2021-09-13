@@ -44,7 +44,7 @@ You should see a bunch of files that are changed.  You will see bunch of apt fil
 Save the container as a new image `ubuntu1`
 
 ```bash
-$   docker commit ubuntu-c1  ubuntu1
+$   docker commit -m "added tree" ubuntu-c1  ubuntu1
 ```
 
 See the custom image

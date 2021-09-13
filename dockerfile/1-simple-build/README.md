@@ -4,6 +4,13 @@
 
 ## Step-1: Inspect the Dockerfile
 
+Be sure to be in `docker-labs/dockerfile/1-simple-build` directory
+
+```bash
+# adjust to /path/to/docker-labs
+cd  ~/docker-labs/dockerfile/1-simple-build
+```
+
 [Dockerfile is here](Dockerfile)
 
 ## Step-2: Build
@@ -76,3 +83,16 @@ RUN apt install -y less
 - Save the file and build again
 
 - Observe the behaviour
+
+## Discussion
+
+As we note, each `RUN` commnad will create a separate layer.
+
+We don't want to create too many layers with just one change!
+
+Also we may not want to create an 'uber layer' with tons of changes.
+
+Look at [Nginx Dockerfile](https://github.com/nginxinc/docker-nginx/blob/master/stable/debian/Dockerfile)  and see how they are doing it.
+
+**Discuss with class.**
+

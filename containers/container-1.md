@@ -13,7 +13,7 @@ think of.
 Docker pull will pull down a public repo from dockerhub.  Think of it like a git pull.
 
 We are going to use a lightweight Linux container called [alpine](https://hub.docker.com/r/_/alpine/).
-You can read more about it [here](https://hub.docker.com/r/_/alpine/).  It is only 4MB in size, making
+You can read more about it [here](https://hub.docker.com/r/_/alpine/).  It is only 5 MB in size, making
 it perfect for a container.
 
 ```bash

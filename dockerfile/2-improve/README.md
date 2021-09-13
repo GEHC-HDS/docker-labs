@@ -12,6 +12,11 @@ Here we will improve the Dockerfile
 
 ## Step-1 : Inspect the Dockerfile
 
+```bash
+# adjust your /path/to/docker-labs
+$   cd ~/docker-labs/dockerfile/2-improve
+```
+
 Inspect [Dockerfile](Dockerfile)
 
 ## Step-2: Build

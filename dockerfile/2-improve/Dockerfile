@@ -20,7 +20,7 @@ RUN  mkdir -p /home/ubuntu  && \
 
 ## TODO: login as user 'ubuntu' 
 ## TODO: make the working directory as '/home/ubuntu'
-USER ubuntu
-WORKDIR /
+USER ???
+WORKDIR ???
 
 ## TODO: start /bin/bash shell instead of python

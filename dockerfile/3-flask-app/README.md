@@ -4,36 +4,30 @@
 
 In this app, we will create a Python app using flask, and deploy it using docker.
 
-
-Here is the Dockerfile we are going to use
+Here is the [Dockerfile](Dockerfile) we are going to use
 
 ```Dockerfile
-# The base image
 FROM ubuntu:latest
 
-# Install python and pip
-RUN apt-get update -y
-RUN apt-get install -y python-pip python-dev build-essential
+RUN apt-get update  && apt-get install -y \
+			build-essential \
+			python-dev \
+			python3-pip 
 
-# Install Python modules needed by the Python app
 COPY requirements.txt /usr/src/app/
 RUN pip install --no-cache-dir -r /usr/src/app/requirements.txt
-
-# Copy files required for the app to run
 COPY app.py /usr/src/app/
-
-# Declare the port number the container should expose
 EXPOSE 5000
-
-# Run the application
 CMD ["python", "/usr/src/app/app.py"]
 ```
 
 Note what we're going to do.  We are going to start with ubuntu.
 
 ```bash
-cd myfirstapp
-docker build -t myfirstapp .
+# Be in the project dir
+$   cd  ~/docker-labs/dockerfile/3-flask-app
+
+$   docker build .  -t myfirstapp
 ```
 
 You will get a very long output, which will be Docker loading all of your
@@ -59,11 +53,10 @@ Step 2/8 : RUN apt-get update -y
 
 I've snipped this for clarity, but pay attention to what's going on.
 
-
 ## List your images
 
 ```bash
-docker images
+$   docker images
 ```
 
 ```console
@@ -77,7 +70,7 @@ Notice myfirstapp is fairly large (462MB). This is because we have a full-on ubu
 ## Run the container
 
 ```bash
-docker container run -p 5000:5000  --name myfirstapp myfirstapp
+$   docker container run -p 5000:5000  --name myfirstapp myfirstapp
 ```
 
 This will run our app.  console output should look like the following
@@ -88,9 +81,9 @@ This will run our app.  console output should look like the following
 172.17.0.1 - - [24/May/2018 15:55:13] "GET /favicon.ico HTTP/1.1" 404 -
 ```
 
-## Go to browser
+## Access our Flask app
 
-Open your browser and go to YOURMACHINE:5000.  If you are running on localhost, then go to localhost:5000
+Open your browser and go to localhost:5000
 
 You should see something like the following in your browser:
 
@@ -98,5 +91,10 @@ You should see something like the following in your browser:
 Hello! This is my Flask app.
 ```
 
-This indicates your Flask app is running properly. You can now close your container by typing control-c.
+You can also test this on command line
 
+```bash
+$   curl localhost:5000/
+```
+
+This indicates your Flask app is running properly. You can now close your container by typing control-c.
