@@ -37,7 +37,7 @@ We run this, we are going to map port 8000 on the host is pointed to port 80 on 
 On Terminal-1
 
 ```bash
-$   docker run --name nginx1 -p 8000:80 nginx
+$   docker run --rm --name nginx1 -p 8000:80 nginx
 ```
 
 You will see the port forward information in `docker ps`
@@ -77,7 +77,7 @@ The page doesn't work while the contianer is stopped!
 ## Step 4: Run the container in the background
 
 ```bash
-$   docker container run -p 8000:80 -d nginx
+$   docker container run --rm -p 8000:80 -d nginx
 ```
 
 You will see the new container id copied to the screen, as this runs in the background
@@ -93,7 +93,7 @@ As in step 2, go back to the page.  You should see nginx running again.
 ## Step 6:  Stop the container
 
 ```bash
-docker stop <paste-container-id-here>
+$   docker stop <paste-container-id-here>
 ```
 
 It sohould stop your container. If it does not recognize the container id you pasted, say "docker ps" to get the list of container ids.
@@ -103,7 +103,7 @@ It sohould stop your container. If it does not recognize the container id you pa
 ![](../assets/images/port-forwarding-3.png)
 
 ```bash
-$   docker run -d -p 8000:80 -p 9000:80 nginx
+$   docker run --rm -d -p 8000:80 -p 9000:80 nginx
 ```
 
 Use `docker ps` to see ports being forwarded
