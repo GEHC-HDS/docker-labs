@@ -52,3 +52,8 @@ Welcome to docker labs
 ## 9. Swarm
 
 * 9.1 - [docker swarm intro](swarm/1-swarm-intro.md)
+
+## 10. Practice Labs
+
+* 10.1 - [Run a monitoring stack using docker compose](practice-labs/monitoring.md)
+* 10.2 - [Run Netdata monitoring using docker compose](practice-labs/netdata/netdata.md)
