@@ -1,3 +1,5 @@
+<link rel='stylesheet' href='../../assets/css/main.css'/>
+
 # Netdata
 
 [Netdata home](https://github.com/netdata/netdata)

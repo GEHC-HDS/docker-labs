@@ -6,6 +6,28 @@
 
 ```bash
 $   docker volume create --name data-volume1
+
+
+$   docker volume ls
+
+$   docker volume inspect data-volume1
+```
+
+Inspect output
+
+```console
+[
+    {
+        "CreatedAt": "2021-09-10T13:28:13-07:00",
+        "Driver": "local",
+        "Labels": {},
+        "Mountpoint": "/var/lib/docker/volumes/data-volume1/_data",
+        "Name": "data-volume1",
+        "Options": {},
+        "Scope": "local"
+    }
+]
+
 ```
 
 ## Step-2: Attach the volume to the container

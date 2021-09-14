@@ -1,3 +1,5 @@
+<link rel='stylesheet' href='../assets/css/main.css'/>
+
 # Run Monitoring Stack With Docker Compose
 
 ## Plesae follow instructions from here

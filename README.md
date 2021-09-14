@@ -57,3 +57,4 @@ Welcome to docker labs
 
 * 10.1 - [Run a monitoring stack using docker compose](practice-labs/monitoring.md)
 * 10.2 - [Run Netdata monitoring using docker compose](practice-labs/netdata/netdata.md)
+* 10.3 - [Dockerize Hugging Face NLP application](practice-labs/dockerize-hugging-face-nlp/README.md)
