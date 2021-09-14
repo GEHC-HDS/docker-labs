@@ -6,6 +6,7 @@ dockerfile
 images
 install
 networking
+practice-labs
 registries
 storage
 swarm

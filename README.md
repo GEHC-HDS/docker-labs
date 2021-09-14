@@ -36,7 +36,8 @@ Welcome to docker labs
 
 ## 6. Networking
 
-* 6.1 - [Ports](./networking/1-ports.md)
+* 6.1 - [Ports](networking/1-ports.md)
+* 6.2 - [User defined network](networking/2-user-defined-network.md)
 
 ## 7. Storage
 
