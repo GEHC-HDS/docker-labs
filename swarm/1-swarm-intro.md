@@ -22,7 +22,40 @@ Go ahead and login to all 3 machines
 
 (right click on the image to see larger version)
 
-## Step-2: Initialize Swarm on Master
+## Step-2: Set Hostnames
+
+We want to make sure we have unique hostnames, so they are easy to identify.
+
+**on master**
+
+```bash
+$  sudo hostnamectl set-hostname master
+
+# verify by
+$   hostname
+```
+
+**on worker1**
+
+```bash
+$  sudo hostnamectl set-hostname worker1
+
+# verify by
+$   hostname
+```
+
+**on worker2**
+
+```bash
+$  sudo hostnamectl set-hostname worker2
+
+# verify by
+$   hostname
+```
+
+When you set the hostname, the terminal prompt will not change.  You need to log out and log back in
+
+## Step-3: Initialize Swarm on Master
 
 **on master node**
 
@@ -57,7 +90,7 @@ ID                            HOSTNAME   STATUS    AVAILABILITY   MANAGER STATUS
 
 Good master is online!
 
-## Step-3: Join workers to swarm
+## Step-4: Join workers to swarm
 
 Execute the join command on workers
 
@@ -99,7 +132,7 @@ If you run into problems joining nodes to the swarm, you can have the problemati
 $   docker swarm leave
 ```
 
-## Step-4: Run a hello-world service
+## Step-5: Run a hello-world service
 
 **on master**
 
@@ -107,7 +140,7 @@ $   docker swarm leave
 $   docker service create --replicas 1 --name helloworld alpine ping docker.com
 ```
 
-## Step-5: Inspect the service
+## Step-6: Inspect the service
 
 ```bash
 $   docker service ls
@@ -179,7 +212,7 @@ You will see the container running
 2ead14bec53b   alpine:latest          "ping docker.com"        4 minutes ago   Up 4 minutes             helloworld.1.8kz17yta0kh24k4fgc80v7g0b
 ```
 
-## Step-6: Scale the service
+## Step-7: Scale the service
 
 **on master**
 
@@ -224,7 +257,7 @@ nknac3akw8q6   helloworld.4   alpine:latest   k-worker1   Running         Runnin
 y842561lmzow   helloworld.5   alpine:latest   k-worker2   Running         Running about a minute ago             
 ```
 
-## Step-7: Service logs
+## Step-8: Service logs
 
 Let's see what's happening with our service
 
@@ -240,14 +273,14 @@ helloworld.1.8kz17yta0kh2@k-worker1    | PING docker.com (3.90.54.51): 56 data b
 helloworld.4.nknac3akw8q6@k-worker1    | PING docker.com (3.90.54.51): 56 data bytes
 ```
 
-## Step-8: Delete service
+## Step-9: Delete service
 
 ```bash
 $   docker service rm helloworld
 ```
 
 
-## Step-9: Let's try another service - nginx
+## Step-10: Let's try another service - nginx
 
 **on master**
 
