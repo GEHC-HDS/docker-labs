@@ -22,7 +22,7 @@ $   time docker build . -t my-ubuntu
 ## Step-3: Run the newly created image
 
 ```bash
-$   docker run -it  my-ubuntu
+$   docker run -it --rm my-ubuntu
 ```
 
 This will drop you into / directory
@@ -60,7 +60,7 @@ $   time docker build . -t my-ubuntu
 ## Step-5: Run the newly built container
 
 ```bash
-$   docker run -it  my-ubuntu
+$   docker run -it  --rm my-ubuntu
 
 # run atop
 $   atop

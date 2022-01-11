@@ -33,6 +33,12 @@ Status: Downloaded newer image for alpine:latest
 ## Step 2: See the docker image we downloaded
 
 ```bash
+$   docker    images
+```
+
+output will look like
+
+```console
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 hello-world         latest              e38bc07ac18e        5 weeks ago         1.85kB
 alpine              latest              3fd9065eaf02        4 months ago        4.15MB

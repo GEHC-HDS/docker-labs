@@ -31,6 +31,10 @@ Here is our scheme
 ## Step-1: Launch Nginx
 
 ```bash
+
+# be in the storage/nginx dir
+$   cd ~/docker-labs/storage/nginx
+
 $   docker run -d -p 8000:80 \
                -v $(pwd)/nginx/conf/nginx.conf:/etc/nginx/nginx.conf:ro \
                -v $(pwd)/nginx/logs:/var/logs/nginx \

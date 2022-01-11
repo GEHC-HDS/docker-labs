@@ -23,5 +23,3 @@ RUN rm -f /etc/apt/apt.conf.d/01proxy  && \
 
 # copy some files
 COPY README.md   /
-
-ENTRYPOINT ["/bin/bash"]
