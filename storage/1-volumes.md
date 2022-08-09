@@ -42,8 +42,13 @@ Inside the container, verify the volume is mounted as `/data/` directory
 
 ```bash
 $   mount
-$   mount | grep '/data'
+```
 
+```bash
+$   mount | grep '/data'
+```
+
+```bash
 $   df -kh | grep '/data'
 ```
 
@@ -65,6 +70,9 @@ Check if the data is still there
 
 ```bash
 $   ls /data
+```
+
+```bash
 $   cat /data/a.txt
 ```
 
@@ -80,9 +88,13 @@ Within the container:
 
 ```bash
 $   ls /data
-# you will see file a.txt
+```
 
-# let's create another file
+you will see file a.txt
+
+Let's create another file
+
+```bash
 $   echo 'bye' > /data/b.txt
 ```
 
@@ -92,6 +104,8 @@ In terminal-1, (container1) check the files
 $   ls /data
 # you should see both file a.txt and b.txt
 ```
+
+
 So now we can share data between two containers
 
 Exit the second container by typing `exit` or `Ctrl+d`
@@ -104,12 +118,11 @@ In terminal-2, start a new container
 
 ```bash
 $   docker run -it --rm -v data-volume1:/data:ro alpine
-``
+```
 
-Notice the `ro` flag
+Notice the `ro` flag. Inside the container, you will see the volume is mounted as read-only
 
 ```bash
-# inside the container, you will see the volume is mounted as read-only
 $   mount | grep data
 ```
 
@@ -128,4 +141,3 @@ You will see an error message
 ```console
 touch: /data/c.txt: Read-only file system
 ```
-
