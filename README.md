@@ -21,7 +21,7 @@ Welcome to docker labs
 
 ## 3. Images
 
-* 3.1 [Creating custom images](images/1-custom-image.md)
+* 3.1 [Creating custom images](images/01-custom-image.md)
 
 ## 4. Dockerfile
 
