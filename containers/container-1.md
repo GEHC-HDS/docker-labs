@@ -124,7 +124,7 @@ docker container run --rm alpine  ls -l
 
 ## Step 5: Interactive shells
 
-Wait, wow do I ssh to my container? Well, you don't usually do it that way. For one thing, your container
+Wait, how do I ssh to my container? Well, you don't usually do it that way. For one thing, your container
 isn't actually running right now, so if you try to ssh it won't respond. What you probably want is an
 interactive shell.
 
