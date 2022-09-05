@@ -162,7 +162,7 @@ bye!
 ## Summary
 
 So what's the point? That we can run a mini size linux? Well, we are about to see how we can build
-on top of this, But usually we need to start somewhere, and we need some basic place to start. 
+on top of this. But usually we need to start somewhere, and we created some basic place to start. 
 
 ---
 Verified by Farshid on 2022-08-31 16:05:00 UTC
