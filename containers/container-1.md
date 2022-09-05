@@ -1,6 +1,6 @@
 <link rel='stylesheet' href='../assets/css/main.css'/>
 
-# Lab : Container 1
+# Lab: Container 1
 
 ## Overview
 
@@ -139,10 +139,10 @@ docker container run -it --rm alpine /bin/ash
 ```
 
 What does this mean?
- * `-i` : interactive mode
- * `-t` : terminal mode
- * `--rm` : remove container after we are done
- * `/bin/ash` : bash is big and needs to be installed.  ash (almquist shell) is small. We also have old-school sh.
+ * `-i`: interactive mode
+ * `-t`: terminal mode
+ * `--rm`: remove container after we are done
+ * `/bin/ash`: bash is big and needs to be installed.  ash (almquist shell) is small. We also have old-school sh.
 
 Here is the results with a few commands:
 
