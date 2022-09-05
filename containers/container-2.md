@@ -1,6 +1,6 @@
 <link rel='stylesheet' href='../assets/css/main.css'/>
 
-# Lab : Container 2
+# Lab: Container 2
 
 We are going to see how we can manipulate our containers.
 
