@@ -107,7 +107,7 @@ This indicates your Flask app is running properly. You can now close your contai
 
 **_NOTE:_**
 
-- If you're using PowerShell 7 with the latest version of Windows 11, control-C might not work, to need to close your terminal completely and stop the container manually using `docker container stop flask-app`
+- If you're using PowerShell 7 with the latest version of Windows 11, control-C might not work, You need to close your terminal completely and stop the container manually using `docker container stop flask-app`
 
 ---
 Verified by Farshid on 2022-09-06 08:24:00 UTC
