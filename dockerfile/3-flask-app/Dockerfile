@@ -1,9 +1,4 @@
-FROM ubuntu:20.04
-
-RUN apt-get update  && apt-get install -y \
-			build-essential \
-			python-dev \
-			python3-pip 
+FROM python:3.10.6-buster
 
 COPY requirements.txt /usr/src/app/
 RUN pip install --no-cache-dir -r /usr/src/app/requirements.txt
