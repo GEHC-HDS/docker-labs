@@ -30,6 +30,7 @@ $   docker build .  -t my-python
 ```bash
 $   docker run -it my-python
 ```
+Expect errors at this point, because of the ??? in the Dockerfile  
 
 ## Step-4: Improve the Dockerfile
 
