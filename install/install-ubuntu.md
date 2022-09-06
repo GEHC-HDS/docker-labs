@@ -75,9 +75,11 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 ```
 
-Go ahead and log out and log back in again.
+## Step 6: Log out and log back in again
 
-## Step 5: Run Hello world container
+This is necessary for group changes to take effect
+
+## Step 7: Run Hello world container
 
 Run the following hello world container
 
