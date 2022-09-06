@@ -38,7 +38,7 @@ $   less  README.md
 
 We are going to install `atop` package
 
-- Edit the [Dockerfile](Dockerfile) (use `vi` or `nano`
+- Edit the [Dockerfile](Dockerfile) (use `vi` or `nano`)
 
 
 - Around line number 15, add another packge `atop`, so the final line looks like this
