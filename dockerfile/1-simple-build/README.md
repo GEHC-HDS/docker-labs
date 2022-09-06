@@ -31,7 +31,7 @@ Examine file `README.md`
 
 ```bash
 # inside the container
-$   cat  README.md
+$   more  README.md
 ```
 
 ## Step-4: Install more packages
