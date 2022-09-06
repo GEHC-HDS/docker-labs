@@ -40,9 +40,9 @@ We are going to install `atop` package
 
 - Edit the [Dockerfile](Dockerfile)
 
-If you need a command-line editor, do this:
-apt update
-apt install nano
+If you need a command-line editor, do this:  
+apt update  
+apt install nano  
 
 - Around line number 15, add another packge `atop`, so the final line looks like this
 
