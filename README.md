@@ -32,7 +32,7 @@ Welcome to docker labs
 ## 5 - Registries
 
 * 5.1 - [Running a local registry](registries/1-local-registry.md)
-* 5.2 - [Working with Dockerhub](registries/2-dockerhub.md)
+* 5.2 - [Working with DockerHub](registries/2-dockerhub.md)
 
 ## 6. Networking
 
