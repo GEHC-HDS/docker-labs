@@ -8,7 +8,7 @@ Sometimes the host and containers need to share some directories
 
 In this example, we will share directory from host.
 
-## Step-1 : Create a share dir
+## Step-1: Create a share dir
 
 **In terminal-1 (host)**
 
