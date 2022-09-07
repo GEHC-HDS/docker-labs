@@ -40,13 +40,15 @@ On Terminal-1
 $   docker run --rm --name nginx1 -p 8000:80 nginx
 ```
 
-You will see the port forward information in `docker ps`
+Leave this terminal running...
+
+From terminal-2
+
+See the port forward information in `docker ps`
 
 ```bash
 $   docker ps
 ```
-
-Leave this terminal running...
 
 From terminal-2, access port 8000
 
