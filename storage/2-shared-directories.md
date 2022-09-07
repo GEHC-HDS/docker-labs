@@ -105,3 +105,11 @@ You can mount the directory as read-only as well
 ```bash
 $   docker run -it --rm -v $(pwd)/data:/data:ro alpine
 ```
+ Try to touch a file and get an error
+ 
+ ```bash
+ 
+ $   touch data/aha
+touch: data/aha: Read-only file system
+```bash
+ 
