@@ -1,6 +1,6 @@
 <link rel='stylesheet' href='../../assets/css/main.css'/>
 
-# Lab : Docker Compose  - Wordpress
+# Lab: Docker Compose  - Wordpress
 
 ## Overview
 
