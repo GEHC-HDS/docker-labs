@@ -13,6 +13,8 @@ In this example, we will share directory from host.
 **In terminal-1 (host)**
 
 ```bash
+$   mkdir -p ~/docker-labs/volumes 
+
 $   cd ~/docker-labs/volumes
 
 $   mkdir data
