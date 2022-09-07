@@ -82,7 +82,7 @@ Within the container:
 
 ```bash
 $   ls /data
-# you will see file a.txt
+# you will see file a.txt (I did not)
 
 # let's create another file
 $   echo 'hi from c2' > /data/c2.txt
