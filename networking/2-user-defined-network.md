@@ -4,7 +4,7 @@
 
 ## Overview
 
-In this lab, we are going to create and user a 'user defined network'
+In this lab, we are going to create and use a 'user-defined network'
 
 ## Duration 
 
