@@ -1,8 +1,8 @@
 <link rel='stylesheet' href='../assets/css/main.css'/>
 
-# Lab : Volumes
+# Lab: Volumes
 
-## Step-1 : Create a docker volume
+## Step-1: Create a docker volume
 
 ```bash
 $   docker volume create --name data-volume1
