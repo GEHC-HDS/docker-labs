@@ -2,7 +2,7 @@
 
 # Run Monitoring Stack With Docker Compose
 
-## Plesae follow instructions from here
+## Please follow instructions from here
 
 - https://github.com/stefanprodan/dockprom
 - This dockerizes Prometheus, Grafana and others into a nice stack
