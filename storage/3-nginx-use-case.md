@@ -1,6 +1,6 @@
 <link rel='stylesheet' href='../assets/css/main.css'/>
 
-# Lab : Shared data use case: Nginx
+# Lab: Shared data use case: Nginx
 
 ## Overview
 
