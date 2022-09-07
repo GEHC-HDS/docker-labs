@@ -1,6 +1,6 @@
 <link rel='stylesheet' href='../../assets/css/main.css'/>
 
-# Lab : Docker Compose 1
+# Lab: Docker Compose 1
 
 ## Overview
 
