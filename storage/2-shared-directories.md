@@ -13,28 +13,35 @@ In this example, we will share directory from host.
 **In terminal-1 (host)**
 
 ```bash
-$   mkdir -p ~/docker-labs/volumes 
-
-$   cd ~/docker-labs/volumes
-
-$   mkdir data
-
-$   echo 'hi from host' > data/host.txt
-
+mkdir -p ~/docker-labs/volumes 
 ```
+```bash
+cd ~/docker-labs/volumes
+```
+
+```bash
+mkdir data
+```
+
+```bash
+echo 'hi from host' > data/host.txt
+```
+
+
+
 
 ## Step-2: Attach the directory to the container
 
-**In terminal-2**
+open a new terminal and run the following command
 
 When mounting shared directories, it is recommended to use full path names.
 
 ```bash
-$   echo $(pwd)/data
+echo $(pwd)/data
 ```
 
 ```bash
-$   docker run -it --rm -v $(pwd)/data:/data alpine
+docker run -it --rm -v $(pwd)/data:/data alpine
 ```
 
 ## Step-3: Inspect the mount
@@ -42,21 +49,22 @@ $   docker run -it --rm -v $(pwd)/data:/data alpine
 Inside the container, verify the volume is mounted as `/data/` directory
 
 ```bash
-$   mount
-$   mount | grep '/data'
-
-$   df -kh | grep '/data'
+mount | grep '/data'
 ```
 
 ## Step-4: See the shared data 
 
 ```bash
-$   cat /data/host.txt
-# you will see the host file
-
-# now create another file
-$   echo "hi from c1" > /data/c1.txt
+cat /data/host.txt
 ```
+you will see the host file
+
+
+now create another file
+```bash
+echo "hi from c1" > /data/c1.txt
+```
+
 
 Exit the container by typing `exit` or `Ctrl+d`
 
@@ -65,36 +73,46 @@ Exit the container by typing `exit` or `Ctrl+d`
 **In terminal-1 (host)**
 
 ```bash
-$   ls data
-$   cat data/c1.txt
+ls data
 ```
+
+```bash
+cat data/c1.txt
+```
+
 We see the data being shared between host and container
 
 ## Step-6: Start another container
 
-In terminal-3
+open a new terminal and run the following command
 
 ```bash
-$   docker run -it --rm -v $(pwd)/data:/data alpine
+docker run -it --rm -v $(pwd)/data:/data alpine
 ```
 
 Within the container:
 
 ```bash
 $   ls /data
-# you will see file a.txt (I did not)
+```
+You will see the following files:
+- c1.txt
+- host.txt
 
-# let's create another file
-$   echo 'hi from c2' > /data/c2.txt
+Let's create another file
+```bash
+echo 'hi from c2' > /data/c2.txt
 ```
 
 In terminal-1, (host) check the files
 
 ```bash
-$   ls data
-
-# you should see all files: host.txt, c1.txt, c2.txt
+ ls data
 ```
+You should see all files:
+- c1.txt
+- c2.txt
+- host.txt
 
 Exit the second container by typing `exit` or `Ctrl+d`
 
@@ -102,14 +120,19 @@ Exit the second container by typing `exit` or `Ctrl+d`
 
 You can mount the directory as read-only as well
 
+open a new terminal and run the following command
+
 ```bash
-$   docker run -it --rm -v $(pwd)/data:/data:ro alpine
+docker run -it --rm -v $(pwd)/data:/data:ro alpine
 ```
  Try to touch a file and get an error
  
  ```bash
- 
- $   touch data/aha
+touch data/aha
+```
+And you will get the following error:
+
+```output
 touch: data/aha: Read-only file system
-```bash
- 
+```
+
