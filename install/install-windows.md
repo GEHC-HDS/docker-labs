@@ -72,7 +72,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; `
  * Close Powershell
 
 
-## Step 6: Open a new Powrshell as Administrator
+## Step 6: Open a new Powershell as Administrator
 
  * Click Start and type “powershell“
  * Right-click Windows Powershell and choose “Run as Administrator“
